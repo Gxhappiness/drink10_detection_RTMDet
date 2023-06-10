@@ -25,6 +25,22 @@ MS COCO dataset:https://zihao-download.obs.cn-east-3.myhuaweicloud.com/yolov8/da
 
 
 
+
+
+
+
+
+配置文件cfg-rtmdet-drink10.py中训练轮次epoch是100，获取到best_coco_bbox_mAP的epoch轮次是38，并且一直到56epoch时验证集性能都没有提升，此时采取了早停政策
+
+
+
+
+
+
+
+
+
+
 ![image](https://github.com/Gxhappiness/drink10_detection_RTMDet/assets/95199650/e33433c2-316c-4331-9d84-c997b80444aa)
 
 
