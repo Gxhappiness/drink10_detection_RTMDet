@@ -1,0 +1,23 @@
+特征图feature map可视化（终端命令行先转到项目文件目录下）
+####一定要先将图片尺寸缩放到640*640，不然程序会奔溃，缩放手段见resize_large_image.py
+
+
+a.可视化 backbone 输出的 3 个通道
+
+python ../../demo/featmap_vis_demo.py resized_2.jpg cfg-rtmdet-drink10.py work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth  --target-layers backbone  --channel-reduction squeeze_mean
+
+python ../../demo/featmap_vis_demo.py resized_10.jpg cfg-rtmdet-drink10.py work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth  --target-layers backbone  --channel-reduction squeeze_mean
+
+
+b.可视化 neck 输出的 3 个通道
+
+python ../../demo/featmap_vis_demo.py resized_2.jpg cfg-rtmdet-drink10.py work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth  --target-layers neck  --channel-reduction squeeze_mean
+
+python ../../demo/featmap_vis_demo.py resized_10.jpg cfg-rtmdet-drink10.py work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth  --target-layers neck  --channel-reduction squeeze_mean
+
+
+
+
+
+
+

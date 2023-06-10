@@ -1,0 +1,45 @@
+数据集：https://download.openmmlab.com/mmyolo/data/cat_datset.zip
+
+
+终端命令行转到配置文件cfg-rtmdet-drink10.py所在的目录 cd 
+找到tools/train.py的绝对路径D:/0.dive into pytorch/openmmlab/mmdetection/tools/train.py
+相对配置文件cfg-rtmdet-drink10.py的相对路径为../../tools/train.py
+
+
+开始训练
+
+python ../../tools/train.py cfg-rtmdet-drink10.py
+
+
+
+
+测试和推理(并将测试图片的真实值和预测值保存)
+
+python ../../tools/test.py cfg-rtmdet-drink10.py work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth --show-dir result
+ 
+
+在本地推理单张图片
+
+python ../../demo/image_demo.py 1.jpg cfg-rtmdet-drink10.py --weights work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth
+
+python ../../demo/image_demo.py 2.jpg cfg-rtmdet-drink10.py --weights work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth
+
+python ../../demo/image_demo.py 3.jpg cfg-rtmdet-drink10.py --weights work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth
+
+python ../../demo/image_demo.py 4.jpg cfg-rtmdet-drink10.py --weights work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth
+
+python ../../demo/image_demo.py 5.jpg cfg-rtmdet-drink10.py --weights work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth
+
+python ../../demo/image_demo.py 6.jpg cfg-rtmdet-drink10.py --weights work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth
+
+python ../../demo/image_demo.py 7.jpg cfg-rtmdet-drink10.py --weights work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth
+
+python ../../demo/image_demo.py 8.jpg cfg-rtmdet-drink10.py --weights work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth
+
+python ../../demo/image_demo.py 9.jpg cfg-rtmdet-drink10.py --weights work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth
+
+python ../../demo/image_demo.py 10.jpg cfg-rtmdet-drink10.py --weights work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth
+
+python ../../demo/image_demo.py 11.jpg cfg-rtmdet-drink10.py --weights work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth
+
+python ../../demo/image_demo.py 12.jpg cfg-rtmdet-drink10.py --weights work_dirs/cfg-rtmdet-drink10/best_coco_bbox_mAP_epoch_38.pth
