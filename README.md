@@ -17,6 +17,14 @@ MS COCO dataset:https://zihao-download.obs.cn-east-3.myhuaweicloud.com/yolov8/da
 
 
 
+
+特征图（feature map）可视化的环境依赖和相关配置参见本人CSDN帖子：https://bbs.csdn.net/topics/615881624
+
+
+
+
+
+
 ![image](https://github.com/Gxhappiness/drink10_detection_RTMDet/assets/95199650/e33433c2-316c-4331-9d84-c997b80444aa)
 
 
